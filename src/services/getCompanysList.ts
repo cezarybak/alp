@@ -1,5 +1,5 @@
 import { SearchCompanyList } from 'src/types/SearchCompanyList';
-import { REACT_APP_API_KEY, REACT_APP_ENDPOINT_URL } from './env';
+import { REACT_APP_API_KEY, REACT_APP_ENDPOINT_URL } from './environmentData';
 
 export const getCompanysList = async (search: string): Promise<SearchCompanyList> =>
   await fetch(

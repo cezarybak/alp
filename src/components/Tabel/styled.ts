@@ -28,6 +28,7 @@ export const TabelStyled = styled.table`
 export const TabelElementHeader = styled.th`
   padding: 4px;
   margin: 0;
+  color: white;
   height: 100%;
   background-color: gray;
   border: 1px solid black;
@@ -41,8 +42,14 @@ export const TabelRow = styled.tr`
   border: 1px solid black;
 `;
 
-export const Title = styled.span``;
+export const Title = styled.span`
+  font-size: 14px;
+  font-weight: 500;
+`;
 
 export const TabelElementBody = styled.th<TabelElementBodyProps>`
   background-color: ${(props) => (props.isEven ? 'palevioletred' : 'white')};
+
+  padding: 4px;
+  color: black;
 `;

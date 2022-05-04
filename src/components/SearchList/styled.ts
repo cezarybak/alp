@@ -48,4 +48,8 @@ export const SearchWraper = styled.div`
   flex-direction: column;
   row-gap: 8px;
   margin: auto;
+
+  @media screen and (max-width: 36rem) {
+    width: 100%;
+  }
 `;

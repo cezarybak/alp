@@ -7,13 +7,7 @@ export const Company = () => {
   return (
     <>
       <Header />
-      {loading ? (
-        <Spinner />
-      ) : (
-        <main>
-          <CompanyDetails />
-        </main>
-      )}
+      {loading ? <Spinner /> : <CompanyDetails />}
     </>
   );
 };

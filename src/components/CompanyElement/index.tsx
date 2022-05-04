@@ -1,6 +1,6 @@
 import { useFavoriteContext } from '../../hooks';
 import { CompanyElement as CompanyElementType } from 'src/types/SearchCompanyList';
-import { CompanyElementItem, ElementButton, ElementContent } from './style';
+import { CompanyElementItem, ElementButton, ElementContent } from './styled';
 
 type Props = {
   element: CompanyElementType;

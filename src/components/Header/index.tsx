@@ -1,4 +1,4 @@
-import { HeaderContent, HeaderWraper } from './style';
+import { HeaderContent, HeaderWraper } from './styled';
 
 export const Header = () => (
   <HeaderWraper>

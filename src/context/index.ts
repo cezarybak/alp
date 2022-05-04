@@ -1,2 +1,3 @@
-export { useFavoriteData } from './FavoriteContext/favoriteContext';
-export { FavoriteContext } from './FavoriteContext/favoriteContext';
+export { FavoriteContextProvider } from './FavoriteContext/FavoriteContextProvider';
+export { useFavoriteData } from './FavoriteContext/FavoriteContext';
+export { FavoriteContext } from './FavoriteContext/FavoriteContext';
