@@ -1,3 +1,4 @@
+import { useFavoriteContext } from '../../hooks';
 import { CompanyElement } from '../../types/SearchCompanyList';
 
 type CompnayListElementProps = {
@@ -5,10 +6,23 @@ type CompnayListElementProps = {
 };
 
 export const CompnayListElement = ({ element }: CompnayListElementProps) => {
+  const { setFavoriteData, favoriteData } = useFavoriteContext();
+
   return (
     <li>
       <span>{`${element['1. symbol']} - ${element['2. name']}`}</span>
-      <button>+</button>
+      <button
+        disabled={Boolean(
+          favoriteData.find((favoriteElement) => favoriteElement.symbol === element['1. symbol']),
+        )}
+        onClick={() =>
+          setFavoriteData((prev) => {
+            return [...prev, { company: element['2. name'], symbol: element['1. symbol'] }];
+          })
+        }
+      >
+        +
+      </button>
     </li>
   );
 };

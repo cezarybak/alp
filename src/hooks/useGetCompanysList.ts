@@ -6,7 +6,6 @@ import { useSearchParams } from 'react-router-dom';
 
 export const useGetCompanysList = () => {
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
   const [data, setData] = useState<SearchCompanyList | undefined>(undefined);
   const [params, setParams] = useSearchParams();
   const search = params.get('search');
@@ -26,7 +25,6 @@ export const useGetCompanysList = () => {
           setLoading(false);
         })
         .catch((e) => {
-          setError(e);
           setLoading(false);
         });
     }
@@ -34,7 +32,6 @@ export const useGetCompanysList = () => {
 
   return {
     loading,
-    error,
     data,
     handleSetSearch,
     search,
