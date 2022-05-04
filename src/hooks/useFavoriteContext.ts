@@ -1,5 +1,5 @@
-import { FavoriteContext } from '../context/FavoriteContext/favoriteContext';
 import { useContext } from 'react';
+import { FavoriteContext } from 'src/context/FavoriteContext/favoriteContext';
 
 export const useFavoriteContext = () => {
   const data = useContext(FavoriteContext);

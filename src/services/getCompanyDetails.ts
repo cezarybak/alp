@@ -1,4 +1,4 @@
-import { CompanyDetails } from '../types/CompanyDetails';
+import { CompanyDetails } from 'src/types/CompanyDetails';
 import { REACT_APP_API_KEY, REACT_APP_ENDPOINT_URL } from './env';
 
 export const getCompanyDetails = async (symbol: string): Promise<CompanyDetails> =>

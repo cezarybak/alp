@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
-import { getCompanyDetails } from '../services/getCompanyDetails';
-import { CompanyDetails } from '../types/CompanyDetails';
+import { useParams } from 'react-router-dom';
+import { getCompanyDetails } from 'src/services/getCompanyDetails';
+import { CompanyDetails } from 'src/types/CompanyDetails';
 
-export const useGetCompanyDetails = (id: string | undefined) => {
+export const useGetCompanyDetails = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState<CompanyDetails | undefined>();
+  const params = useParams();
+
+  const { id } = params;
 
   useEffect(() => {
     if (id) {

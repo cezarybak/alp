@@ -1,8 +1,8 @@
-import { useDebounce } from './useDebounce';
-import { getCompanysList } from '../services/getCompanysList';
-import { useState, useEffect, ChangeEvent } from 'react';
-import { SearchCompanyList } from '../types/SearchCompanyList';
+import { ChangeEvent, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { getCompanysList } from 'src/services/getCompanysList';
+import { SearchCompanyList } from 'src/types/SearchCompanyList';
+import { useDebounce } from './useDebounce';
 
 export const useGetCompanysList = () => {
   const [loading, setLoading] = useState(false);

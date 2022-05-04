@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { FavoriteContext, useFavoriteData } from '../../context';
-import { Company, Home } from '../../pages';
+import { FavoriteContext, useFavoriteData } from 'src/context';
+import { Company, Home } from 'src/pages';
 import { AppRoute } from './AppRoute.enum';
 
 export const AppRoutes = () => {

@@ -1,11 +1,11 @@
 import { useFavoriteContext } from '../../hooks';
-import { CompanyElement } from '../../types/SearchCompanyList';
+import { CompanyElement as CompanyElementType } from 'src/types/SearchCompanyList';
 
-type CompnayListElementProps = {
-  element: CompanyElement;
+type Props = {
+  element: CompanyElementType;
 };
 
-export const CompnayListElement = ({ element }: CompnayListElementProps) => {
+export const CompanyElement = ({ element }: Props) => {
   const { setFavoriteData, favoriteData } = useFavoriteContext();
 
   return (

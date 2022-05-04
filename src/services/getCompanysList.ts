@@ -1,4 +1,4 @@
-import { SearchCompanyList } from '../types/SearchCompanyList';
+import { SearchCompanyList } from 'src/types/SearchCompanyList';
 import { REACT_APP_API_KEY, REACT_APP_ENDPOINT_URL } from './env';
 
 export const getCompanysList = async (search: string): Promise<SearchCompanyList> =>
