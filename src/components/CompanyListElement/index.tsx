@@ -1,11 +1,13 @@
+import { CompanyElement } from '../../types/SearchCompanyList';
+
 type CompnayListElementProps = {
-  name: any;
+  element: CompanyElement;
 };
 
-export const CompnayListElement = ({ name }: CompnayListElementProps) => {
+export const CompnayListElement = ({ element }: CompnayListElementProps) => {
   return (
     <li>
-      <span>{name['1. symbol']}</span>
+      <span>{`${element['1. symbol']} - ${element['2. name']}`}</span>
       <button>+</button>
     </li>
   );
