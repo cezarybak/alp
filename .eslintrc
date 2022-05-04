@@ -11,6 +11,7 @@
     "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
     "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-empty-interface": "off",
     "react/prop-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "react/jsx-props-no-spreading": "off",

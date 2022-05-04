@@ -17,7 +17,7 @@ export const useGetCompanysList = () => {
   const debounceSearchValue = useDebounce(search, 500);
 
   useEffect(() => {
-    if (debounceSearchValue) {
+    if (debounceSearchValue !== null) {
       setLoading(true);
       getCompanysList(debounceSearchValue)
         .then((e) => {

@@ -16,10 +16,10 @@ export const useGetCompanyDetails = () => {
       getCompanyDetails(id)
         .then((e) => {
           setData(e);
-          setLoading(true);
+          setLoading(false);
         })
         .catch((e) => {
-          setLoading(true);
+          setLoading(false);
         });
     }
   }, []);

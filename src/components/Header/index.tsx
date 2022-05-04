@@ -1,5 +1,7 @@
+import { HeaderContent, HeaderWraper } from './style';
+
 export const Header = () => (
-  <header>
-    <h2>SDH Frontend Homework</h2>
-  </header>
+  <HeaderWraper>
+    <HeaderContent>SDH Frontend Homework</HeaderContent>
+  </HeaderWraper>
 );
