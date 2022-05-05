@@ -5,7 +5,7 @@ import { AppRoutes } from './routing';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <AppRoutes />
