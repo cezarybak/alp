@@ -15,7 +15,7 @@ export const CompanyElement = ({ element }: Props) => {
       Boolean(
         favoriteData.find((favoriteElement) => favoriteElement.symbol === element['1. symbol']),
       ),
-    [favoriteData, element],
+    [favoriteData, element, setFavoriteData],
   );
 
   const handleAddElement = useCallback(() => {
