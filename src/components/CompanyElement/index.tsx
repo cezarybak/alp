@@ -15,14 +15,14 @@ export const CompanyElement = ({ element }: Props) => {
       Boolean(
         favoriteData.find((favoriteElement) => favoriteElement.symbol === element['1. symbol']),
       ),
-    [favoriteData, element, setFavoriteData],
+    [favoriteData, element],
   );
 
   const handleAddElement = useCallback(() => {
     return setFavoriteData((prev) => {
       return [...prev, { company: element['2. name'], symbol: element['1. symbol'] }];
     });
-  }, [element]);
+  }, [element, setFavoriteData]);
 
   return (
     <CompanyElementItem>

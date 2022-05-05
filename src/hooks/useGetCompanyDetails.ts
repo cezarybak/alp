@@ -18,11 +18,11 @@ export const useGetCompanyDetails = () => {
           setData(e);
           setLoading(false);
         })
-        .catch((e) => {
+        .catch(() => {
           setLoading(false);
         });
     }
-  }, []);
+  }, [id]);
 
   return {
     loading,

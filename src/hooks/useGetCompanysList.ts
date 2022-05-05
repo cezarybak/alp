@@ -24,7 +24,7 @@ export const useGetCompanysList = () => {
           setData(e);
           setLoading(false);
         })
-        .catch((e) => {
+        .catch(() => {
           setLoading(false);
         });
     }

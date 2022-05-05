@@ -22,7 +22,7 @@ export const Tabel = () => {
         prev.filter((favoriteItem) => favoriteItem.symbol !== symbol),
       );
     },
-    [],
+    [setFavoriteData],
   );
 
   const handleNavigationBack = (symbol: string) => navigator(`/company/${symbol}`);
