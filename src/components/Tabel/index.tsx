@@ -45,7 +45,7 @@ export const Tabel = () => {
                 <TabelElementBody isEven={isEven}>{item.company}</TabelElementBody>
                 <TabelElementBody isEven={isEven}>{item.symbol}</TabelElementBody>
                 <TabelElementBody
-                  isPointer
+                  isRemove
                   isEven={isEven}
                   onClick={(e) => handleRemoveItem(e, item.symbol)}
                 >

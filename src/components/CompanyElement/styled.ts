@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const CompanyElementItem = styled.li`
   display: flex;
   justify-content: space-between;
+  cursor: default;
 `;
 
 export const ElementContent = styled.span``;
@@ -16,5 +17,8 @@ export const ElementButton = styled.button`
 
   :disabled {
     cursor: not-allowed;
+    border-color: gray;
+    color: gray;
+    opacity: 0.5;
   }
 `;

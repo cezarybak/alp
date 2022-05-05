@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 type TabelElementBodyProps = {
   isEven: boolean;
-  isPointer?: boolean;
+  isRemove?: boolean;
 };
 
 type TabelRow = {
@@ -57,8 +57,10 @@ export const Title = styled.span`
 export const TabelElementBody = styled.th<TabelElementBodyProps>`
   background-color: ${(props) => (props.isEven ? 'lightgray' : 'white')};
   border: 1px solid black;
-  ${(props) => props.isPointer && { cursor: 'pointer' }};
+  ${(props) => props.isRemove && { cursor: 'pointer' }};
   padding: 16px 8px;
-
+  :hover {
+    ${(props) => props.isRemove && { color: 'red' }};
+  }
   color: black;
 `;

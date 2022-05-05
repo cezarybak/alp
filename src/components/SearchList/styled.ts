@@ -39,6 +39,7 @@ export const UnorderedList = styled.ul`
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+  cursor: default;
 `;
 
 export const SearchWraper = styled.div`
