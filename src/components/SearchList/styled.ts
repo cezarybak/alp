@@ -24,7 +24,6 @@ export const SearchIcon = styled(SearchSVG)`
 export const SearchListContainer = styled.div`
   margin-top: 50px;
   width: 100%;
-  padding: 0px 16px;
 `;
 
 export const Label = styled.label`
@@ -43,15 +42,11 @@ export const UnorderedList = styled.ul`
 `;
 
 export const SearchWraper = styled.div`
-  width: 75%;
   display: flex;
   flex-direction: column;
   row-gap: 8px;
   margin: auto;
-
-  @media screen and (max-width: 36rem) {
-    width: 100%;
-  }
+  width: 90%;
 `;
 
 export const ListWraper = styled.div`
@@ -59,6 +54,11 @@ export const ListWraper = styled.div`
   row-gap: 8px;
   flex-direction: column;
   margin-top: 50px;
+  width: 75%;
+
+  @media screen and (max-width: 36rem) {
+    width: 100%;
+  }
 `;
 
 export const ListLabel = styled.label`
