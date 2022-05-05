@@ -17,7 +17,13 @@ jobs:
       - name: Install
         run: yarn
       - name: Build
-        run: yarn build
+        run: |
+          touch .env
+          echo REACT_APP_ENDPOINT_URL=${{ secrets.APP_ENDPOINT_URL }} >> .env
+          echo REACT_APP_API_KEY=${{ secrets.API_KEY }} >> .env
+          echo PUBLIC_URL=${{ secrets.PUBLIC_URL }} >> .env
+          yarn build
+
       - name: Deploy to GH Page
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
