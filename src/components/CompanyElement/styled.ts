@@ -9,4 +9,11 @@ export const ElementContent = styled.span``;
 
 export const ElementButton = styled.button`
   height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+
+  :disabled {
+    cursor: not-allowed;
+  }
 `;

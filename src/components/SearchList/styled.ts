@@ -25,7 +25,6 @@ export const SearchListContainer = styled.div`
   margin-top: 50px;
   width: 100%;
   padding: 0px 16px;
-  column-gap: 8px;
 `;
 
 export const Label = styled.label`
@@ -35,6 +34,7 @@ export const Label = styled.label`
 
 export const UnorderedList = styled.ul`
   list-style-type: none;
+  margin: 0;
   border: 2px solid black;
   padding: 8px;
   display: flex;
@@ -52,4 +52,16 @@ export const SearchWraper = styled.div`
   @media screen and (max-width: 36rem) {
     width: 100%;
   }
+`;
+
+export const ListWraper = styled.div`
+  display: flex;
+  row-gap: 8px;
+  flex-direction: column;
+  margin-top: 50px;
+`;
+
+export const ListLabel = styled.label`
+  margin: 0;
+  padding: 0;
 `;

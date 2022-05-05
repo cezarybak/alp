@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 type TabelElementBodyProps = {
   isEven: boolean;
+  isPointer?: boolean;
+};
+
+type TabelRow = {
+  isPointer?: boolean;
 };
 
 export const TabelWraper = styled.div`
@@ -26,7 +31,8 @@ export const TabelStyled = styled.table`
 `;
 
 export const TabelElementHeader = styled.th`
-  padding: 4px;
+  padding: 16px 8px;
+
   margin: 0;
   color: white;
   height: 100%;
@@ -34,7 +40,8 @@ export const TabelElementHeader = styled.th`
   border: 1px solid black;
 `;
 
-export const TabelRow = styled.tr`
+export const TabelRow = styled.tr<TabelRow>`
+  cursor: ${(props) => (props.isPointer ? 'pointer' : 'default')};
   border: 1px solid black;
   background-color: gray;
   margin: 0;
@@ -49,7 +56,9 @@ export const Title = styled.span`
 
 export const TabelElementBody = styled.th<TabelElementBodyProps>`
   background-color: ${(props) => (props.isEven ? 'palevioletred' : 'white')};
+  border: 1px solid black;
+  ${(props) => props.isPointer && { cursor: 'pointer' }};
+  padding: 16px 8px;
 
-  padding: 4px;
   color: black;
 `;

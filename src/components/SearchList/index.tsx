@@ -3,6 +3,7 @@ import { CompanyElement } from '../CompanyElement';
 import { Spinner } from '../Spinner';
 import {
   Label,
+  ListWraper,
   Search,
   SearchIcon,
   SearchInputWraper,
@@ -34,10 +35,10 @@ export const SearchList = () => {
         {loading ? (
           <Spinner />
         ) : (
-          <>
+          <ListWraper>
             {!!(data?.bestMatches?.length || 0 > 0) && (
               <>
-                Search List
+                <Label>Search List</Label>
                 <UnorderedList>
                   {data?.bestMatches?.map((element, index) => (
                     <CompanyElement key={index} element={element} />
@@ -45,7 +46,7 @@ export const SearchList = () => {
                 </UnorderedList>
               </>
             )}
-          </>
+          </ListWraper>
         )}
       </SearchWraper>
     </SearchListContainer>

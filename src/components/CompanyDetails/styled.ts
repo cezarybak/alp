@@ -8,10 +8,24 @@ export const CompanyDetailsWraper = styled.main`
 
 export const ButtonCompany = styled.button`
   background-color: white;
+  padding: 8px 16px;
+  border: 1px solid black;
+
+  cursor: pointer;
 `;
 
-export const CompanyTitle = styled.h1``;
+export const CompanyTitle = styled.h1`
+  margin: 0;
+  padding: 0;
+  margin: 16px 0;
+`;
 
-export const CompanyInfo = styled.h4``;
+export const CompanyInfo = styled.h4`
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+`;
 
-export const CompanyDescription = styled.span``;
+export const CompanyDescription = styled.p`
+  margin-top: 64px;
+`;
