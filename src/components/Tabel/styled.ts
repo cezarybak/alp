@@ -55,7 +55,7 @@ export const Title = styled.span`
 `;
 
 export const TabelElementBody = styled.th<TabelElementBodyProps>`
-  background-color: ${(props) => (props.isEven ? 'palevioletred' : 'white')};
+  background-color: ${(props) => (props.isEven ? 'lightgray' : 'white')};
   border: 1px solid black;
   ${(props) => props.isPointer && { cursor: 'pointer' }};
   padding: 16px 8px;
