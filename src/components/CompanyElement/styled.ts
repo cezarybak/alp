@@ -9,8 +9,9 @@ export const CompanyElementItem = styled.li`
 export const ElementContent = styled.span``;
 
 export const ElementButton = styled.button`
-  height: 20px;
-  width: 20px;
+  padding: 0 4px;
+  height: 16px;
+  text-align: center;
   margin-left: 8px;
   background-color: white;
   border: 1px solid black;

@@ -5,6 +5,11 @@ export const Search = styled.input`
   width: 50%;
   border-radius: 16px;
   padding: 8px 24px;
+  border: 1.5px solid black;
+
+  :focus {
+    outline: none;
+  }
 `;
 
 export const SearchInputWraper = styled.div`
