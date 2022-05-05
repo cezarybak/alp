@@ -1,3 +1,4 @@
+# Deploy: https://cezarybak.github.io/alphavent/
 # Example .env:
 
 ```env
