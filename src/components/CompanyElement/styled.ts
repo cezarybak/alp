@@ -11,6 +11,7 @@ export const ElementContent = styled.span``;
 export const ElementButton = styled.button`
   height: 20px;
   width: 20px;
+  margin-left: 8px;
   background-color: white;
   border: 1px solid black;
   cursor: pointer;

@@ -11,7 +11,7 @@ type TabelRow = {
 
 export const TabelWraper = styled.div`
   width: 100%;
-  margin-top: 50px;
+  margin: 50px 0px;
 `;
 
 export const TabelContainer = styled.div`
